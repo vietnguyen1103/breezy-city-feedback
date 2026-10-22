@@ -1,0 +1,22 @@
+name: 💬 Góp ý chung / General feedback
+description: Cảm nhận, câu hỏi hoặc lời nhắn cho Breezy City. Thoughts, questions or a note.
+title: "[Góp ý] "
+labels: ["feedback"]
+body:
+  - type: textarea
+    id: message
+    attributes:
+      label: Bạn muốn nhắn gì? / Your message
+      placeholder: Mình hay mở Breezy City lúc… / I like…
+    validations:
+      required: true
+  - type: dropdown
+    id: usage
+    attributes:
+      label: Bạn thường dùng Breezy City để… / You mostly use it to…
+      multiple: true
+      options:
+        - Làm việc / Work
+        - Học bài / Study
+        - Thư giãn / Relax
+        - Ngắm cho vui / Just for fun

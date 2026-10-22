@@ -1,0 +1,74 @@
+name: 🐞 Báo lỗi / Bug report
+description: Có gì đó chạy sai trên Breezy City. Something isn't working.
+title: "[Lỗi] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cảm ơn bạn đã báo lỗi! Càng chi tiết, mình sửa càng nhanh. Thanks for reporting — English is fine too.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Chuyện gì đã xảy ra? / What happened?
+      description: Mô tả lỗi bạn gặp. Describe the problem.
+      placeholder: Ví dụ — Bật "Chế độ tập trung" thì nhạc không phát…
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Các bước để gặp lại lỗi / Steps to reproduce
+      placeholder: |
+        1. Mở trang…
+        2. Bấm…
+        3. Thấy…
+  - type: textarea
+    id: expected
+    attributes:
+      label: Bạn mong đợi điều gì? / What did you expect?
+  - type: dropdown
+    id: device
+    attributes:
+      label: Thiết bị / Device
+      options:
+        - Máy tính / Desktop or laptop
+        - Điện thoại / Phone
+        - Máy tính bảng / Tablet
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Trình duyệt / Browser
+      options:
+        - Chrome
+        - Safari
+        - Edge
+        - Firefox
+        - Cốc Cốc
+        - Khác / Other
+    validations:
+      required: true
+  - type: dropdown
+    id: style
+    attributes:
+      label: Phong cách phố đang dùng / Town style
+      options:
+        - Châu Âu / European
+        - Việt Nam / Vietnam
+        - Paris
+        - Venice
+        - Miền Tây hoang dã / Old West
+        - Không rõ / Not sure
+  - type: input
+    id: share-link
+    attributes:
+      label: Link thành phố (không bắt buộc) / Town link (optional)
+      description: Bấm nút "Chia sẻ" trong app rồi dán link vào đây. Press "Share" in the app and paste the link.
+      placeholder: https://breezy-city.pages.dev/?style=…
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Ảnh chụp hoặc video / Screenshots or video
+      description: Kéo thả ảnh, video vào đây. Drag and drop files here.

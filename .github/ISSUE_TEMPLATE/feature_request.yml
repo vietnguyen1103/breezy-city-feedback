@@ -1,0 +1,39 @@
+name: ✨ Đề xuất tính năng / Feature request
+description: Ý tưởng để Breezy City thú vị hơn. An idea to make Breezy City better.
+title: "[Ý tưởng] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Mọi ý tưởng đều được chào đón: phong cách phố mới, thú cưng mới, âm thanh mới… 🌿 Every idea is welcome.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Thuộc phần nào? / Which part?
+      options:
+        - Thành phố & hiệu ứng / Town & effects
+        - Âm thanh & nhạc / Sound & music
+        - Tập trung & Pomodoro / Focus & pomodoro
+        - Thú cưng & sự kiện vui / Critters & fun events
+        - Giao diện & điều khiển / Interface & controls
+        - Khác / Other
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Ý tưởng của bạn / Your idea
+      placeholder: Ví dụ — Thêm phong cách phố Hội An với đèn lồng…
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Vì sao nó hữu ích? / Why would it help?
+      description: Bạn sẽ dùng nó khi nào? When would you use it?
+  - type: textarea
+    id: references
+    attributes:
+      label: Hình ảnh, video tham khảo / References
+      description: Ảnh, video hoặc link minh hoạ (không bắt buộc). Optional.
